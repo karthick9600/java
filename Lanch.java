@@ -1,22 +1,27 @@
-package com.Project;
+package com.Array;
 
 public class Lanch {
 
 	public static void main(String[] args) {
-		int arr[]=new int[5];
-		arr[0]=10;
-		arr[1]=11;
-		arr[2]=12;
-		arr[3]=13;
-		arr[4]=14;
-		System.out.println(arr[0]);
-		System.out.println(arr[1]);
-		System.out.println(arr[2]);
-		System.out.println(arr[3]);
-		System.out.println(arr[4]);
-		
-		
+		int arr[]= {40,30,10,50,20};
+		int key =10;
+		int answer=LinearSearch(arr,key );
+		if(answer>=0) {
+			System.out.println("key is found at "+answer);
+		}
+		else {
+			System.out.println("key not found");
+		}
 
+	}
+	static int LinearSearch(int arr[],int key) {
+		for(int i = 0;i<arr.length;i++) {
+			if(arr[i]==key) {
+				return i;
+			}
+		}
+		return -1;
+		
 	}
 
 }
