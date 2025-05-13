@@ -12,7 +12,7 @@ class Dog extends Main {
     }
 }
 
-public class Main {
+public class Animal {
     public  static void main(String[] args) {
         Dog d = new Dog();
         d.eat();  // inherited method
