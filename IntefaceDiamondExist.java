@@ -8,6 +8,7 @@ interface Calculator2{
 	void mul();
 	void div();
 }
+
 class Mycalculator implements Calculator1,Calculator2{
 	public void add(){
 		int a=200;
